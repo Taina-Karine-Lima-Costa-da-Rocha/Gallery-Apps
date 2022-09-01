@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 
-import DefaultToolkitDownload from "../Container/Default/AppDefaultToolkit";
+import  AppDefaultReduxToolkit  from "../Container/indext";
 
 const pageRouters = {
     paginaInicial: "/pagina-inicial",
@@ -11,7 +11,9 @@ const pageRouters = {
 export const AppRouter = () => {
     return (
         <Routes>
-            <Route path={pageRouters.aplicacaoDefaultDoRedux} element={<DefaultToolkitDownload />} />
+            <Route path={pageRouters.aplicacaoDefaultDoRedux} 
+            element={<AppDefaultReduxToolkit />} 
+            />
             {/* <Route path="*" element={<Navigate to={pageRouters.paginaInicial} />} /> */}
         </Routes>
     )
